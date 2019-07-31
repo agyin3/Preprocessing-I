@@ -54,11 +54,214 @@ table {
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
 }
 
-/* Test */
-
-body {
-	background: red;
+html {
+	font-size: 62.5%;
 }
+
+/* Variables */
+
+@lakerPurple: #552583;
+@lakerGold: #FDB927;
+@lakerBlack: #000;
+@lakerWhite: #fff;
+@border: 1px solid black;
+
+/* Mix-Ins */
+
+.flexin() {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1% 0;
+}
+.spacing() {
+	margin-bottom: 1%;
+}
+.bordered() {
+	border-bottom: @border;
+}
+
+.link-decoration() {
+	text-decoration: none;
+	color: @lakerPurple;
+}
+
+.sub-heading() {
+	font-size: 3.2rem;
+}
+
+
+/* Main Styling */ 
+
+.container {
+	width: 95vw;
+	margin: 0 auto;
+	color: @lakerPurple;
+
+	header{
+		.spacing();
+
+		.menu {
+			.flexin();
+			width: 40%;
+			font-size: 2rem;
+	
+			.menu-items {
+				.link-decoration();
+			}
+	
+		}
+	}
+
+	.intro {
+		background: @lakerGold;
+		padding: 5% 2.5% 2.5% 2.5%;
+		.spacing();
+
+		.name {
+			.bordered();
+			.spacing();
+
+			.img-container {
+				margin: 0 auto;
+				text-align: center;
+				.spacing();
+
+				img {
+					width: 40%;
+				}
+			}
+			.name-title {
+				font-size: 4.8rem;
+				.spacing();
+			}
+
+			.name-text {
+				font-size: 2.8rem;
+				.spacing();
+			}
+		}
+
+		.intro-sub {
+			
+			.intro-sub-text {
+				font-size: 2.4rem;
+				.spacing();
+			}
+
+			.button {
+				font-size: 2rem;
+				color: @lakerWhite;
+				background: @lakerPurple;
+				text-align: center;
+				width: 20rem;
+				border-radius: 5px;
+				padding: 0.5% 1%;
+			}
+
+			.button:hover {
+				cursor: pointer;
+				background: @lakerBlack;
+			}
+		}
+	}
+
+	.about-me {
+		.flexin();
+		align-items: flex-start;
+		.spacing();
+
+		.listen-up {
+			flex-basis: 45%;
+			
+			.listen-up-title {
+				.sub-heading();
+				.spacing();
+			}
+
+			.listen-up-text {
+				font-size: 2.2rem;
+			}
+		}
+
+		.skills {
+			flex-basis: 45%;
+			
+			.skills-title {
+				.sub-heading();
+				.spacing();
+			}
+
+			.skills-list {
+				.flexin();
+				flex-direction: column;
+				align-items: flex-start;
+
+				.skills-items {
+					font-size: 2.2rem;
+					width: 100%;
+					padding: 3% 2%;
+					.bordered();
+					border-left: @border;
+					border-right: @border;
+				}
+
+				#first-item {
+					border-top: @border;
+				}
+			}
+		}
+	}
+
+	.work-history {
+		.spacing();
+		.work-history-title {
+			.sub-heading();
+			.spacing();
+		}
+
+		table {
+			font-size: 2rem;
+			width: 100%;
+			border-collapse: collapse;
+
+			.work-history-heading {
+				font-weight: bold;
+
+				.work-history-heading-item {
+					text-align: left;
+					.bordered();
+					padding-bottom: 1%;
+				}
+			}
+
+			.work-history-jobs {
+
+				.work-history-jobs-item {
+					padding-top: 1%;
+				}
+
+				.year {
+					font-weight: bold;
+				}
+			}
+		}
+	}
+
+	footer {
+		height: 10vh;
+		.flexin(); 
+		justify-content: center;
+		background: @lakerPurple;
+		color: @lakerWhite;
+
+		.footer-text {
+			font-size: 1.8rem;
+		}
+	}
+}
+
+

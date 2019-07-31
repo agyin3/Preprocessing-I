@@ -134,7 +134,154 @@ html,
 body {
   height: 100%;
 }
-/* Test */
-body {
-  background: red;
+html {
+  font-size: 62.5%;
+}
+/* Variables */
+/* Mix-Ins */
+/* Main Styling */
+.container {
+  width: 95vw;
+  margin: 0 auto;
+  color: #552583;
+}
+.container header {
+  margin-bottom: 1%;
+}
+.container header .menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1% 0;
+  width: 40%;
+  font-size: 2rem;
+}
+.container header .menu .menu-items {
+  text-decoration: none;
+  color: #552583;
+}
+.container .intro {
+  background: #FDB927;
+  padding: 5% 2.5% 2.5% 2.5%;
+  margin-bottom: 1%;
+}
+.container .intro .name {
+  border-bottom: 1px solid black;
+  margin-bottom: 1%;
+}
+.container .intro .name .img-container {
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 1%;
+}
+.container .intro .name .img-container img {
+  width: 40%;
+}
+.container .intro .name .name-title {
+  font-size: 4.8rem;
+  margin-bottom: 1%;
+}
+.container .intro .name .name-text {
+  font-size: 2.8rem;
+  margin-bottom: 1%;
+}
+.container .intro .intro-sub .intro-sub-text {
+  font-size: 2.4rem;
+  margin-bottom: 1%;
+}
+.container .intro .intro-sub .button {
+  font-size: 2rem;
+  color: #fff;
+  background: #552583;
+  text-align: center;
+  width: 20rem;
+  border-radius: 5px;
+  padding: 0.5% 1%;
+}
+.container .intro .intro-sub .button:hover {
+  cursor: pointer;
+  background: #000;
+}
+.container .about-me {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1% 0;
+  align-items: flex-start;
+  margin-bottom: 1%;
+}
+.container .about-me .listen-up {
+  flex-basis: 45%;
+}
+.container .about-me .listen-up .listen-up-title {
+  font-size: 3.2rem;
+  margin-bottom: 1%;
+}
+.container .about-me .listen-up .listen-up-text {
+  font-size: 2.2rem;
+}
+.container .about-me .skills {
+  flex-basis: 45%;
+}
+.container .about-me .skills .skills-title {
+  font-size: 3.2rem;
+  margin-bottom: 1%;
+}
+.container .about-me .skills .skills-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1% 0;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.container .about-me .skills .skills-list .skills-items {
+  font-size: 2.2rem;
+  width: 100%;
+  padding: 3% 2%;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+.container .about-me .skills .skills-list #first-item {
+  border-top: 1px solid black;
+}
+.container .work-history {
+  margin-bottom: 1%;
+}
+.container .work-history .work-history-title {
+  font-size: 3.2rem;
+  margin-bottom: 1%;
+}
+.container .work-history table {
+  font-size: 2rem;
+  width: 100%;
+  border-collapse: collapse;
+}
+.container .work-history table .work-history-heading {
+  font-weight: bold;
+}
+.container .work-history table .work-history-heading .work-history-heading-item {
+  text-align: left;
+  border-bottom: 1px solid black;
+  padding-bottom: 1%;
+}
+.container .work-history table .work-history-jobs .work-history-jobs-item {
+  padding-top: 1%;
+}
+.container .work-history table .work-history-jobs .year {
+  font-weight: bold;
+}
+.container footer {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1% 0;
+  justify-content: center;
+  background: #552583;
+  color: #fff;
+}
+.container footer .footer-text {
+  font-size: 1.8rem;
 }
