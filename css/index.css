@@ -146,7 +146,7 @@ html {
   color: #552583;
 }
 .container header {
-  margin-bottom: 1%;
+  margin-bottom: 2.5%;
 }
 .container header .menu {
   display: flex;
@@ -156,6 +156,11 @@ html {
   width: 40%;
   font-size: 2rem;
 }
+@media (max-width: 500px) {
+  .container header .menu {
+    width: 100%;
+  }
+}
 .container header .menu .menu-items {
   text-decoration: none;
   color: #552583;
@@ -163,44 +168,47 @@ html {
 .container .intro {
   background: #FDB927;
   padding: 5% 2.5% 2.5% 2.5%;
-  margin-bottom: 1%;
+  margin-bottom: 2.5%;
 }
 .container .intro .name {
   border-bottom: 1px solid black;
-  margin-bottom: 1%;
+  margin-bottom: 2.5%;
 }
 .container .intro .name .img-container {
   margin: 0 auto;
   text-align: center;
-  margin-bottom: 1%;
+  margin-bottom: 2.5%;
 }
 .container .intro .name .img-container img {
   width: 40%;
 }
 .container .intro .name .name-title {
   font-size: 4.8rem;
-  margin-bottom: 1%;
+  margin-bottom: 2.5%;
 }
 .container .intro .name .name-text {
   font-size: 2.8rem;
-  margin-bottom: 1%;
+  margin-bottom: 2.5%;
 }
 .container .intro .intro-sub .intro-sub-text {
   font-size: 2.4rem;
-  margin-bottom: 1%;
+  margin-bottom: 2.5%;
 }
 .container .intro .intro-sub .button {
-  font-size: 2rem;
-  color: #fff;
+  cursor: pointer;
+  font-size: 1.6rem;
+  width: 15%;
   background: #552583;
-  text-align: center;
-  width: 20rem;
+  color: #fff;
   border-radius: 5px;
-  padding: 0.5% 1%;
+  border: none;
+  padding: 10px;
+  text-align: center;
 }
 .container .intro .intro-sub .button:hover {
   cursor: pointer;
   background: #000;
+  color: #FDB927;
 }
 .container .about-me {
   display: flex;
@@ -208,14 +216,26 @@ html {
   align-items: center;
   padding: 1% 0;
   align-items: flex-start;
-  margin-bottom: 1%;
+  margin-bottom: 2.5%;
+}
+@media (max-width: 500px) {
+  .container .about-me {
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }
 .container .about-me .listen-up {
   flex-basis: 45%;
 }
+@media (max-width: 500px) {
+  .container .about-me .listen-up {
+    flex-basis: 100%;
+    margin-bottom: 5%;
+  }
+}
 .container .about-me .listen-up .listen-up-title {
   font-size: 3.2rem;
-  margin-bottom: 1%;
+  margin-bottom: 2.5%;
 }
 .container .about-me .listen-up .listen-up-text {
   font-size: 2.2rem;
@@ -223,9 +243,15 @@ html {
 .container .about-me .skills {
   flex-basis: 45%;
 }
+@media (max-width: 500px) {
+  .container .about-me .skills {
+    width: 95%;
+    margin-bottom: 5%;
+  }
+}
 .container .about-me .skills .skills-title {
   font-size: 3.2rem;
-  margin-bottom: 1%;
+  margin-bottom: 2.5%;
 }
 .container .about-me .skills .skills-list {
   display: flex;
@@ -247,11 +273,16 @@ html {
   border-top: 1px solid black;
 }
 .container .work-history {
-  margin-bottom: 1%;
+  margin-bottom: 2.5%;
+}
+@media (max-width: 500px) {
+  .container .work-history {
+    margin-bottom: 5%;
+  }
 }
 .container .work-history .work-history-title {
   font-size: 3.2rem;
-  margin-bottom: 1%;
+  margin-bottom: 2.5%;
 }
 .container .work-history table {
   font-size: 2rem;
@@ -271,6 +302,46 @@ html {
 }
 .container .work-history table .work-history-jobs .year {
   font-weight: bold;
+}
+.container .contact {
+  width: 100%;
+  margin-bottom: 2.5%;
+  font-size: 2.2rem;
+}
+.container .contact .contact-form {
+  width: 95%;
+}
+.container .contact .contact-form div label input {
+  width: 100%;
+  box-shadow: inset 0 1px 2px #ddd, 0 1px 0 #fff;
+  border: 1px solid #ccc;
+  background: #fff;
+  margin: 5px 0 15px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+.container .contact .contact-form div label textarea {
+  width: 100%;
+  box-shadow: inset 0 1px 2px #ddd, 0 1px 0 #fff;
+  border: 1px solid #ccc;
+  background: #fff;
+  margin: 5px 0 15px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+.container .contact .contact-form div button {
+  cursor: pointer;
+  font-size: 1.6rem;
+  width: 15%;
+  background: #552583;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+}
+.container .contact .contact-form div button:hover {
+  background: #000;
+  color: #FDB927;
 }
 .container footer {
   height: 10vh;
