@@ -14,6 +14,110 @@
 </head>
 
 <body>
-  <h1>My Resume</h1>
+  <div class="container">
+    <header>
+      <ul class="menu">
+        <li><a class="menu-items" href="#">Home</a></li>
+        <li><a class="menu-items" href="#">About</a></li>
+        <li><a class="menu-items" href="#">Portfolio</a></li>
+        <li><a class="menu-items" href="#">Contact</a></li>
+      </ul>
+    </header>
+
+    <section class="intro">
+      <div class="name">
+        <div class="img-container">
+          <img src="img/kobe bryant.jpg">
+        </div>
+        <h1 class="name-title">Kobe Bryant</h1>
+        <p class="name-text">The Black Mamba</p>
+      </div>
+      <div class="intro-sub">
+        <p class="intro-sub-text">5x NBA Champion and Oscar Award Winner</p>
+        <div class="button">Check out my work</div>
+      </div>
+    </section>
+      
+    <section class="about-me">
+      <div class="listen-up">
+        <h2 class="listen-up-title">Listen Up...</h2>
+        <p class="listen-up-text">For those of you living under a rock, I'm Kobe Bryant aka The Black Mamba aka Vino aka Your Worst Nightmare. Ever since I was a kid, I only had one goal...to become the greatest baskeball player of all-time. Throughout the years my dedication to hard work and ability to stay focused on a single goal elevated me above my competition and eventually gained it's own nickname, The Mamba Mentality. After a fruitul basketball career, one that saw me win 5 NBA TItles and countless individual awards, I opened my own media company. Even though I was no longer on the court, The Mamba Mentality stayed with me leading me to win an Oscar Award for an animated short film I made paying homage to the game I loved - Dear Basketball.</p>
+      </div>
+      <div class="skills">
+        <h2 class="skills-title">Stuff I'm Good At</h2>
+        <ul class="skills-list">
+          <li id="first-item" class="skills-items">Breaking Ankles</li>
+          <li class="skills-items">Getting Buckets</li>
+          <li class="skills-items">Turning grown men into posters</li>
+          <li class="skills-items">Winning</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="work-history">
+      <h2 class="work-history-title">Work History</h2>
+      <table>
+        <tr class="work-history-heading">
+          <th class="work-history-heading-item">Years</th>
+          <th class="work-history-heading-item">Occupation</th>
+          <th class="work-history-heading-item">Organization</th>
+          <th class="work-history-heading-item">City</th>
+        </tr>
+        <tr class="work-history-jobs">
+          <td class="work-history-jobs-item year">20</td>
+          <td class="work-history-jobs-item">NBA Player</td>
+          <td class="work-history-jobs-item">Los Angeles Lakers</td>
+          <td class="work-history-jobs-item">Los Angeles, CA</td>
+        </tr>
+      </table>
+    </section>
+
+    <section class="contact">
+      <form class="contact-form">
+        <div>
+            <label>
+                <span>Your Name: (required)</span> <br/>
+                <input type="text" placeholder="Please enter your name" tabindex="1" name="name" required autofocus>
+            </label>
+        </div>
+        
+        <div>
+            <label>
+                <span>Your Email: (required)</span> <br/>
+                <input type="email" placeholder="you@example.com" tabindex="2" name="email" required>
+            </label>
+        </div>
+        
+        <div>
+            <label>
+                <span>Website:</span> <br/>
+                <input type="url" placeholder="www.example.com" tabindex="3" name="website" required>
+            </label>
+        </div>
+        
+        <div>
+            <label>
+                <span>Subject: (required)</span> <br/>
+                <input type="text" tabindex="4" name="subject" required>
+            </label>
+        </div>
+        
+        <div>
+            <label>
+                <span>Message: (required)</span> <br/>
+                <textarea rows="8" tabindex="5" name="message"></textarea>
+            </label>
+        </div>
+        
+        <div>
+            <button name="submit" tabindex="6" type="submit" id="contact-submit">Send</button>
+        </div>
+      </form>
+    </section>
+
+    <footer>
+      <p class="footer-text">&copy; Black Mamba Media</p>
+    </footer>
+  </div>
 </body>
 </html>
